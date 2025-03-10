@@ -1,0 +1,126 @@
+.intro {
+    position: relative;
+    min-height: 570px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.intro__background {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    right: -10%;
+    bottom: 0;
+    transform: rotate(358deg);
+    background-color: rgba(255, 220, 221, 1);
+    transform-origin: bottom left;
+}
+
+.intro__container {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 100px;
+}
+
+.intro__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    height: 100%;
+    align-items: baseline;
+}
+
+.intro__content-descr {
+    flex: 1;
+    max-width: 600px;
+}
+
+.intro__title {
+    color: var(--primary-foreground);
+}
+
+.intro__title-span {
+    color: var(--primary);
+}
+
+.intro__descr {
+    color: var(--gray);
+}
+
+.intro__actions {
+    display: flex;
+    background-color: white;
+    height: 92px;
+    border-radius: var(--rounded-base);
+    box-shadow: 10px 22px 44px 0px rgba(27, 29, 33, 0.06);
+}
+
+.intro__actions-item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 80px;
+    border-left: solid;
+    border-width: 1px;
+    border-color: rgba(237, 237, 237, 1);
+}
+
+.intro__actions-item:first-child {
+    border: none;
+}
+
+.intro__actions-button-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.intro__actions-button {
+    height: 62px;
+}
+
+.intro__circle1 {
+    position: absolute;
+    background-color: white;
+    border-radius: 100%;
+    width: 162px;
+    height: 162px;
+    top: 110px;
+    right: 362px;
+}
+
+.intro__circle2 {
+    position: absolute;
+    background-color: white;
+    border-radius: 100%;
+    width: 182px;
+    height: 182px;
+    top: 180px;
+    right: 150px;
+}
+
+.intro__circle3 {
+    position: absolute;
+    background-color: white;
+    border-radius: 100%;
+    width: 132px;
+    height: 132px;
+    top: 290px;
+    right: 446px;
+}
+
+.intro__circle4 {
+    position: absolute;
+    background-color: rgba(255, 162, 98, 1);
+    border-radius: 100%;
+    width: 62px;
+    height: 62px;
+    top: 380px;
+    right: 324px;
+}
