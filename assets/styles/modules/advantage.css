@@ -12,3 +12,35 @@
     align-content: center;
     padding: 100px 0;
 }
+
+.advantage__header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    row-gap: 16px;
+}
+
+.advantage__header-text-descr {
+    display: flex;
+    text-align: center;
+    width: 877px;
+    height: 128px;
+}
+
+.advantage__reviews {
+    display: flex;
+    flex-direction: row;
+    column-gap: 64px;
+}
+
+.advantage__reviews-number {
+    text-align: center;
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    color: rgba(255, 162, 98, 1);
+}
