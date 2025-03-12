@@ -39,7 +39,7 @@
 }
 
 .intro__title {
-    color: var(--primary-foreground);
+    color: rgba(15, 23, 61, 1);
 }
 
 .intro__title-span {
@@ -47,7 +47,7 @@
 }
 
 .intro__descr {
-    color: var(--gray);
+    color: rgba(15, 23, 61, 1);
 }
 
 .intro__actions {
