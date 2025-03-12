@@ -1,6 +1,6 @@
 .intro {
     position: relative;
-    min-height: 570px;
+    min-height: 630px;
     height: 100%;
     overflow: hidden;
 }
@@ -10,7 +10,7 @@
     top: -10%;
     left: 0;
     right: -10%;
-    bottom: 0;
+    bottom: 60px;
     transform: rotate(358deg);
     background-color: rgba(255, 220, 221, 1);
     transform-origin: bottom left;
@@ -21,7 +21,7 @@
     top: 80px;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 60px;
     padding: 0 100px;
 }
 
@@ -123,4 +123,28 @@
     height: 62px;
     top: 380px;
     right: 324px;
+}
+
+.ri-arrow-right-up-line {
+    color: rgba(0, 203, 248, 1);
+}
+
+.ri-arrow-right-down-line {
+    color: rgba(0, 203, 248, 1);
+}
+
+.ri-flashlight-fill {
+    color: rgba(0, 203, 248, 1);
+}
+
+.ri-baidu-line {
+    color: rgba(126, 99, 251, 1);
+}
+
+.ri-cash-line {
+    color:  rgba(255, 162, 98, 1);
+}
+
+.ri-dossier-fill {
+    color:  rgba(255, 111, 115, 1);
 }

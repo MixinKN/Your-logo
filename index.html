@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Your Logo</title>
   <!-- icons -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link
+          href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+          rel="stylesheet"
+  />
   <!-- styles -->
   <link rel="stylesheet" href="assets/styles/vendors/normalize.css">
   <link rel="stylesheet" href="assets/styles/main.css">
@@ -19,7 +22,10 @@
       <div class="header__logo">
         <img class="header__logo-img" alt="Logo" src="assets/images/Logo.svg">
       </div>
-      <div class="header__row-right">
+      <nav class="header__row-right">
+        <div class="header__logo-mobile">
+          <img class="header__logo-img" alt="Logo" src="assets/images/Logo.svg">
+        </div>
         <menu class="header__menu">
           <li class="header__menu-item">
             <a href="./howItWorks" class="header__menu-link">How it works</a>
@@ -34,7 +40,13 @@
         <div class="header__button-wrapper">
           <button class="button button__action-button button--ghost">Get Shipping Quotes</button>
         </div>
-      </div>
+        <button class="header__menu-close">
+          <i class="ri-close-large-line"></i>
+        </button>
+      </nav>
+      <button class="header__menu-burger">
+        <i class="ri-menu-line"></i>
+      </button>
     </div>
   </header>
 <!--intro section-->
@@ -52,14 +64,12 @@
         </div>
         <menu class="intro__actions">
           <div class="intro__actions-item">
-            <span>
-              <i class="ri-arrow-right-up-long-line"></i>
-              Pickup Location
-            </span>
+            <span>Pickup Location<i class="ri-arrow-right-up-line"></i></span>
             <span>Your pick point</span>
           </div>
           <div class="intro__actions-item">
-            <span>Delivery Location</span>
+            <span>Delivery Location<i class="ri-arrow-right-down-line"></i></span>
+
             <span>Your destination</span>
           </div>
           <div class="intro__actions-item">
@@ -85,27 +95,60 @@
       </div>
       <div class="shipper__wrapper-right">
         <div class="shipper__wrapper-right-item">
+          <i class="ri-flashlight-fill icons"></i>
           <span class="shipper__wrapper-right-item-text title-lg">Fast and safety</span>
           <p class="shipper__wrapper-right-item-text-descr title-md">Lorem ipsum is typically a corrupted
             version of 'De finibus bonorum</p>
         </div>
         <div class="shipper__wrapper-right-item">
+          <i class="ri-baidu-line icons"></i>
           <span class="shipper__wrapper-right-item-text title-lg">Pets lover crew all</span>
           <p class="shipper__wrapper-right-item-text-descr title-md">Lorem ipsum is typically a corrupted
             version of 'De finibus bonorum</p>
         </div>
         <div class="shipper__wrapper-right-item">
+          <i class="ri-cash-line icons"></i>
           <span class="shipper__wrapper-right-item-text title-lg">Money back guarantee</span>
           <p class="shipper__wrapper-right-item-text-descr title-md">Lorem ipsum is typically a corrupted
             version of 'De finibus bonorum</p>
         </div>
         <div class="shipper__wrapper-right-item">
+          <i class="ri-dossier-fill icons"></i>
           <span class="shipper__wrapper-right-item-text title-lg">Health checkin protocol</span>
           <p class="shipper__wrapper-right-item-text-descr title-md">Lorem ipsum is typically a corrupted
             version of 'De finibus bonorum</p>
         </div>
       </div>
     </div>
+  </section>
+<!--section advantage-->
+  <section class="advantage advantage--section">
+      <div class="advantage__container">
+        <div class="advantage__header">
+          <h3>The Shipper advantage 😸</h3>
+        </div>
+        <div class="advantage__header-text">
+          <span class="advantage__header-text-descr">CitizenShipper connects people who need to transport their most important, hard-to-ship items-like pets, cars, motorcycles, and furniture-with trusted and reliable transportation professionals. Our online marketplace makes it fast and affordable for shipping customers to find the ideal transporter to match their needs, budget and schedule.</span>
+        </div>
+        <div class="advantage__reviews">
+          <div class="advantage__reviews-item">
+            <h3 class="advantage__reviews-number">20k+</h3>
+            <span class="advantage__reviews-text">All customer pets delivered</span>
+          </div>
+          <div class="advantage__reviews-item">
+            <h3 class="advantage__reviews-number">15.6k</h3>
+            <span class="advantage__reviews-text">Pets find their new parents</span>
+          </div>
+          <div class="advantage__reviews-item">
+            <h3 class="advantage__reviews-number">99.9%</h3>
+            <span class="advantage__reviews-text">Successfull rate delivered</span>
+          </div>
+          <div class="advantage__reviews-item">
+            <h3 class="advantage__reviews-number">5+</h3>
+            <span class="advantage__reviews-text">Starts appreciated</span>
+          </div>
+        </div>
+      </div>
   </section>
 <!--footer section-->
   <section class="footer footer--section">
@@ -149,9 +192,11 @@
           <div class="footer__wrapper-text">
             <form action="#!" method="post" enctype="multipart/form-data" class="footer__subscribe-form">
               <div class="footer__subscribe-form-item">
-                <input type="email" class="footer__subscribe-form-input" placeholder="Your Email" required>
+                <input type="email" class="footer__subscribe-form-input button button--primary" placeholder="Your email here..." required>
               </div>
-              <button type="submit" class="footer__subscribe-form-button button button--primary">Sign Up</button>
+              <div class="footer__subscribe-form-item">
+                <button type="submit" class="footer__subscribe-form-button button button--primary">Sign Up</button>
+              </div>
             </form>
           </div>
         </div>
@@ -159,4 +204,23 @@
     </div>
   </section>
 </body>
+<script>
+  function openMenu() {
+    document.querySelector('.header__row-right').classList.add('header__row-right--is-open')
+
+  }
+
+  function closeMenu() {
+    document.querySelector('.header__row-right').classList.remove('header__row-right--is-open')
+
+  }
+
+  function setHandleMenuCallbacks() {
+    document.querySelector('.header__menu-burger').onclick=openMenu;
+    document.querySelector('.header__menu-close').onclick=closeMenu;
+
+  }
+
+  setHandleMenuCallbacks()
+</script>
 </html>

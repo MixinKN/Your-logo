@@ -49,6 +49,11 @@
     border-radius: 24px;
 }
 
+.icons {
+    width: 36px;
+    height: 36px;
+}
+
 .badge:has(i) {
     display: flex;
     align-items: center;
