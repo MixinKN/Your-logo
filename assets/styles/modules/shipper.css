@@ -14,7 +14,7 @@
 
 @media screen and (max-width: 1148.98px) {
     .shipper__container {
-        padding: 0 20px;
+        padding: 0 15px;
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -26,6 +26,12 @@
     height: 330px;
     padding: 90px 0;
     row-gap: 10px;
+}
+
+@media screen and (max-width: 768.98px) {
+    .shipper__wrapper-left {
+        width: 350px;
+    }
 }
 
 .shipper__wrapper-right {
