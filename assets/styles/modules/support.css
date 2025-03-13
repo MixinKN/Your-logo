@@ -50,9 +50,19 @@
     }
 }
 
-@media screen and (max-width: 520.98px) {
-
+@media screen and (max-width: 768.98px) {
+    .support__col-img {
+        max-width: 350px;
+        max-height: 400px;
+    }
 }
+
+@media screen and (max-width: 768.98px) {
+    .support__col-left {
+        width: 350px;
+    }
+}
+
 .support__grid {
     position: absolute;
     padding: 32px 24px 27px 24px;
@@ -60,12 +70,6 @@
     border-radius: var(--rounded-base);
     top: 279px;
     left: -121px;
-}
-
-@media screen and (max-width: 768.98px) {
-    .support__grid {
-        left: -10px;
-    }
 }
 
 .support__grid-list {
@@ -116,7 +120,12 @@
     .support__col-left{
         max-width: 100%;
     }
+}
 
+@media screen and (max-width: 768.98px) {
+    .support__col-left{
+        max-width: unset;
+    }
 }
 
 .support__col-comment {

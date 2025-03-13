@@ -10,6 +10,11 @@
     max-width: 702px;
     font-size: 38px;
 }
+@media screen and (max-width: 520.98px) {
+    .pets-title {
+        font-size: 28px;
+    }
+}
 .pets__grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
